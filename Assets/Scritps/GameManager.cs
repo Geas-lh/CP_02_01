@@ -84,4 +84,5 @@ public class GameManager : MonoBehaviour
         targetObjectText.text = "GAME OVER";
         spawner.StopSpawning();
     }
+    
 }

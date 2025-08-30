@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+
 public class Enemy : MonoBehaviour
 {
     public string letter;

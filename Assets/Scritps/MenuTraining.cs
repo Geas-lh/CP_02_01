@@ -16,4 +16,5 @@ public class MenuTraining : MonoBehaviour
         SceneManager.LoadScene("TrainingScene");
     }
 
+
 }

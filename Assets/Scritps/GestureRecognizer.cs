@@ -52,6 +52,7 @@ public class GestureRecognizer : MonoBehaviour, IPointerDownHandler, IPointerUpH
         recognizer.AddTemplate("Z", new List<Vector2> { new Vector2(0, 100), new Vector2(100, 100), new Vector2(0, 0), new Vector2(100, 0) });
         */
     }
+    
 
     public void OnPointerDown(PointerEventData eventData)
     {

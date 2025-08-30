@@ -133,6 +133,7 @@ public class DollarRecognizer
             }
         }
 
+
         if (newPoints.Count == n - 1)
             newPoints.Add(points[points.Count - 1]);
 
