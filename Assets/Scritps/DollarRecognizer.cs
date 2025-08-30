@@ -77,7 +77,7 @@ public class DollarRecognizer
     // Reemplaza el m�todo existente SaveTemplateToDisk(...) por este:
     private void SaveTemplateToDisk(GestureTemplate template)
     {
-        string dir = Path.Combine(Application.persistentDataPath, "Gestures");
+        string dir ="D:Gestures";
         if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
 
         // Contar archivos existentes que empiecen por el nombre (A.json, A_1.json, A_2.json, ...)

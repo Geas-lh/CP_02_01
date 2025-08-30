@@ -59,7 +59,7 @@ public class GestureTrainer : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         recognizer = new DollarRecognizer();
 
         // asegura folder Gestures existe (opcional)
-        string dir = Path.Combine(Application.persistentDataPath, "Gestures");
+        string dir ="D:Gestures";
         if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
     }
 
@@ -157,7 +157,7 @@ public class GestureTrainer : MonoBehaviour, IPointerDownHandler, IDragHandler, 
         foreach (var p in points) gesturePoints.Add(new Vector2(p.x, p.y));
 
         // Determinar índice siguiente para guardar PNG con nombre consistente.
-        string dir = Path.Combine(Application.persistentDataPath, "Gestures");
+        string dir = "D:Gestures";
         if (!Directory.Exists(dir)) Directory.CreateDirectory(dir);
         string[] existing = Directory.GetFiles(dir, baseName + "*.json");
         int nextIndex = existing.Length + 1;
@@ -214,7 +214,7 @@ public class GestureTrainer : MonoBehaviour, IPointerDownHandler, IDragHandler, 
     // opción: listar archivos guardados (útil para debug)
     public string[] ListSavedFiles()
     {
-        string dir = Path.Combine(Application.persistentDataPath, "Gestures");
+        string dir ="D:Gestures";
         if (!Directory.Exists(dir)) return new string[0];
         return Directory.GetFiles(dir, "*.json");
     }

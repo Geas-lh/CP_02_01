@@ -11,7 +11,7 @@ public class GestureGallery : MonoBehaviour
 
     void Start()
     {
-        savePath = Path.Combine(Application.persistentDataPath, "Gestures");
+        savePath = "D:Gestures";
         if (!Directory.Exists(savePath))
             Directory.CreateDirectory(savePath);
 
